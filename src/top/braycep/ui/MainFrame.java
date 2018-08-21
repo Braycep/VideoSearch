@@ -1,5 +1,6 @@
 package top.braycep.ui;
 
+import com.sun.java.swing.plaf.windows.WindowsLookAndFeel;
 import top.braycep.bean.Video;
 import top.braycep.bean.VideoDetails;
 import top.braycep.utils.Utils;
@@ -34,6 +35,7 @@ public class MainFrame extends JFrame {
     private JPopupMenu menu;
     private boolean searching;
     private Video[] videos;
+    private JFrame mainFrame;
 
 
     {
@@ -51,7 +53,7 @@ public class MainFrame extends JFrame {
      */
     public static void main(String[] args) {
         try {
-            UIManager.setLookAndFeel(javax.swing.plaf.nimbus.NimbusLookAndFeel.class.getName());
+            UIManager.setLookAndFeel(WindowsLookAndFeel.class.getName());
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException
                 | UnsupportedLookAndFeelException e1) {
             e1.printStackTrace();
@@ -72,6 +74,7 @@ public class MainFrame extends JFrame {
      * Create the frame.
      */
     public MainFrame() {
+        mainFrame = this;
         setTitle("影视搜搜");
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -145,7 +148,7 @@ public class MainFrame extends JFrame {
         btn_about.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
-                JOptionPane.showMessageDialog(null, "Design By Braycep\nBuild By Braycep\nMedia Source From The Internet", "提示", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(mainFrame, "Design By Braycep\nBuild By Braycep\nMedia Source From The Internet", "提示", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
@@ -153,8 +156,10 @@ public class MainFrame extends JFrame {
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                if (e.getButton() == MouseEvent.BUTTON3) {
-                    focusedRowIndex = table.rowAtPoint(e.getPoint());
+                focusedRowIndex = table.rowAtPoint(e.getPoint());
+                if (e.getClickCount() == 2) {
+                    openDetails();
+                } else if (e.getButton() == MouseEvent.BUTTON3) {
                     if (focusedRowIndex != -1) {
                         table.setRowSelectionInterval(focusedRowIndex, focusedRowIndex);
                         createMouseMenu();
@@ -171,7 +176,7 @@ public class MainFrame extends JFrame {
             public void run() {
                 String keywords = textField.getText().trim();
                 if (keywords.equals("")) {
-                    JOptionPane.showMessageDialog(null, "关键词为空，忽略搜索！", "提示", JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(mainFrame, "关键词为空，忽略搜索！", "提示", JOptionPane.WARNING_MESSAGE);
                 } else {
                     try {
                         model.setNumRows(0);
@@ -183,7 +188,7 @@ public class MainFrame extends JFrame {
                         table.updateUI();
                     } catch (IOException e1) {
                         searching = false;
-                        JOptionPane.showMessageDialog(null, "网页打开失败，请检查网络连接", "警告", JOptionPane.WARNING_MESSAGE);
+                        JOptionPane.showMessageDialog(mainFrame, "网页打开失败，请检查网络连接", "警告", JOptionPane.WARNING_MESSAGE);
                         e1.printStackTrace();
                     }
                 }
@@ -232,29 +237,7 @@ public class MainFrame extends JFrame {
 
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        Integer id = (Integer) table.getValueAt(focusedRowIndex, 0);
-                        String url = Utils.getUrlById(id);
-                        new Thread(){
-                            @Override
-                            public void run() {
-                                VideosList videosList = new VideosList();
-                                videosList.setVisible(true);
-                                VideoDetails videoOders = null;
-                                try {
-                                     videoOders = Utils.findVideoOders(url);
-                                } catch (IOException e1) {
-                                    e1.printStackTrace();
-                                }
-                                if (videoOders != null && videoOders.getUrls1() != null){
-                                    System.out.println(Arrays.toString(videoOders.getUrls1()));
-                                    videosList.setTable1(Utils.produceTable1(videoOders));
-                                }
-                                if (videoOders != null && videoOders.getUrls2() != null){
-                                    System.out.println(Arrays.toString(videoOders.getUrls2()));
-                                    videosList.setTable2(Utils.produceTable2(videoOders));
-                                }
-                            }
-                        }.start();
+                        openDetails();
                     }
                 });
                 break;
@@ -269,7 +252,7 @@ public class MainFrame extends JFrame {
                             Clipboard clip = Toolkit.getDefaultToolkit().getSystemClipboard();
                             Transferable tText = new StringSelection(url);
                             clip.setContents(tText, null);
-                            JOptionPane.showMessageDialog(null, "链接已复制", "提示", JOptionPane.INFORMATION_MESSAGE);
+                            JOptionPane.showMessageDialog(mainFrame, "链接已复制", "提示", JOptionPane.INFORMATION_MESSAGE);
                         }
                     }
                 });
@@ -295,5 +278,31 @@ public class MainFrame extends JFrame {
                 break;
         }
         return item;
+    }
+
+    private void openDetails() {
+        Integer id = (Integer) table.getValueAt(focusedRowIndex, 0);
+        String url = Utils.getUrlById(id);
+        new Thread() {
+            @Override
+            public void run() {
+                VideosList videosList = null;
+                VideoDetails videoDetails = null;
+                try {
+                    videoDetails = Utils.findVideoOders(url);
+                    videosList = new VideosList(videoDetails);
+                    videosList.setVisible(true);
+                } catch (IOException e1) {
+                    JOptionPane.showMessageDialog(mainFrame, "网页打开失败，请检查网络连接", "警告", JOptionPane.WARNING_MESSAGE);
+                    e1.printStackTrace();
+                }
+                if (videoDetails != null && videoDetails.getUrls1() != null) {
+                    videosList.setTable1(Utils.produceTable(1, videoDetails));
+                }
+                if (videoDetails != null && videoDetails.getUrls2() != null) {
+                    videosList.setTable2(Utils.produceTable(2, videoDetails));
+                }
+            }
+        }.start();
     }
 }

@@ -4,6 +4,8 @@
 
 package top.braycep.ui;
 
+import top.braycep.bean.VideoDetails;
+
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
@@ -15,6 +17,7 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.security.Identity;
 import javax.swing.*;
 import javax.swing.table.*;
 
@@ -24,8 +27,10 @@ import javax.swing.table.*;
 public class VideosList extends JFrame {
     private int focusedRowIndex;
     private JPopupMenu menu;
+    private VideoDetails videoDetails;
 
-    public VideosList() {
+    public VideosList(VideoDetails videoDetails) {
+        this.videoDetails = videoDetails;
         initComponents();
         initEvents();
     }
@@ -35,8 +40,8 @@ public class VideosList extends JFrame {
 
             @Override
             public void mouseReleased(MouseEvent e) {
+                focusedRowIndex = table1.rowAtPoint(e.getPoint());
                 if (e.getButton() == MouseEvent.BUTTON3) {
-                    focusedRowIndex = table1.rowAtPoint(e.getPoint());
                     if (focusedRowIndex != -1) {
                         table1.setRowSelectionInterval(focusedRowIndex, focusedRowIndex);
                         createMouseMenu(table1);
@@ -50,8 +55,8 @@ public class VideosList extends JFrame {
 
             @Override
             public void mouseReleased(MouseEvent e) {
+                focusedRowIndex = table2.rowAtPoint(e.getPoint());
                 if (e.getButton() == MouseEvent.BUTTON3) {
-                    focusedRowIndex = table2.rowAtPoint(e.getPoint());
                     if (focusedRowIndex != -1) {
                         table2.setRowSelectionInterval(focusedRowIndex, focusedRowIndex);
                         createMouseMenu(table2);
@@ -145,6 +150,7 @@ public class VideosList extends JFrame {
                         new Object[][]{},
                         titles
                 ));
+                table1.setToolTipText(videoDetails.getVideoInfo());
                 {
                     TableColumnModel cm = table1.getColumnModel();
                     cm.getColumn(0).setMinWidth(15);
@@ -155,7 +161,7 @@ public class VideosList extends JFrame {
                 }
                 scrollPane1.setViewportView(table1);
             }
-            tabbedPane1.addTab("\u6570\u636e\u6e90 - 1", scrollPane1);
+            tabbedPane1.addTab("在线播放", scrollPane1);
 
             //======== scrollPane2 ========
             {
@@ -165,6 +171,7 @@ public class VideosList extends JFrame {
                         new Object[][]{},
                         titles
                 ));
+                table2.setToolTipText(videoDetails.getVideoInfo());
                 {
                     TableColumnModel cm = table2.getColumnModel();
                     cm.getColumn(0).setPreferredWidth(15);
@@ -173,7 +180,7 @@ public class VideosList extends JFrame {
                 }
                 scrollPane2.setViewportView(table2);
             }
-            tabbedPane1.addTab("\u6570\u636e\u6e90 - 2", scrollPane2);
+            tabbedPane1.addTab("M3U8", scrollPane2);
         }
         contentPane.add(tabbedPane1, BorderLayout.NORTH);
         pack();
@@ -181,26 +188,14 @@ public class VideosList extends JFrame {
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
 
-    public void setTable1(Object[][] data){
-        String url = (String)data[0][2];
-        if (url.contains(".m3u8")){
-            tabbedPane1.setTitleAt(0,"M3U8文件");
-        }else{
-            tabbedPane1.setTitleAt(0,"在线播放");
-        }
+    void setTable1(Object[][] data) {
         model1.setNumRows(0);
         model1.setDataVector(data, titles);
         table1.setModel(model1);
         table1.updateUI();
     }
 
-    public void setTable2(Object[][] data){
-        String url = (String)data[0][2];
-        if (url.contains(".m3u8")){
-            tabbedPane1.setTitleAt(1,"M3U8文件");
-        }else{
-            tabbedPane1.setTitleAt(1,"在线播放");
-        }
+    void setTable2(Object[][] data) {
         model2.setNumRows(0);
         model2.setDataVector(data, titles);
         table2.setModel(model2);
