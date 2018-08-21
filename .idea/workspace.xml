@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c9e96fb-d556-450a-94a0-7053a61868db" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/IntelliJ_IDEA_GridLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/TableLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VideoSearch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/TableLayout-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/TableLayout-src.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/TableLayout.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/intellij_forms_rt.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/intellij_forms_rt_src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jsoup.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/bean/Video.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/bean/VideoOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$9$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/MainFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/VideoInfoDialog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/VideosList$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/VideosList$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/VideosList$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/VideosList$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/VideosList$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/VideosList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/VideosListFrame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/ui/VideosListFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/utils/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/VideoSearch/top/braycep/utils/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/top/braycep/bean/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/top/braycep/bean/VideoOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/top/braycep/ui/VideoInfoDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/top/braycep/ui/VideosList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/top/braycep/ui/VideosListFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/top/braycep/utils/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/top/braycep/utils/Utils.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="13967431">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="4" />
+          <entry key="jfd" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="4" />
+          <entry key="JFormDesigner_form" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1385" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1385" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1919">
+              <caret line="101" column="29" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/VideosList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+              <folding>
+                <marker date="1534785591177" expanded="true" signature="4369:6549" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1534785591177" expanded="true" signature="7323:7808" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4180">
+              <caret line="249" column="70" selection-start-line="249" selection-start-column="70" selection-end-line="249" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/Video.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding>
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/VideoOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/top/braycep/bean/VideoOrder.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/ProcessBar.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/progressBar.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/ProgressBar.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/bean/Video.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/VideoInfoDialog.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/VideosListFrame.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/Demo.jfd" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/VideosList.jfd" />
+        <option value="$PROJECT_DIR$/src/top/braycep/utils/Test.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/VideosList.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="430" />
+    <option name="y" value="75" />
+    <option name="width" value="1288" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="braycep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="braycep" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="braycep" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="braycep" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="G:/Git/bin/git.exe" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspaces\IntelliJ IDEA Projects\VideoSearch\src\top\braycep\ui" />
+      <recent name="E:\Workspaces\IntelliJ IDEA Projects\VideoSearch\libs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MainFrame">
+    <configuration name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.braycep.ui.MainFrame" />
+      <module name="VideoSearch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.braycep.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProgressBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.braycep.ui.ProgressBar" />
+      <module name="VideoSearch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.braycep.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.braycep.utils.Test" />
+      <module name="VideoSearch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.braycep.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VideoInfoDialog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.braycep.ui.VideoInfoDialog" />
+      <module name="VideoSearch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.braycep.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VideosListFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.braycep.ui.VideosListFrame" />
+      <module name="VideoSearch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.braycep.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainFrame" />
+      <item itemvalue="Application.ProgressBar" />
+      <item itemvalue="Application.VideoInfoDialog" />
+      <item itemvalue="Application.VideosListFrame" />
+      <item itemvalue="Application.Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainFrame" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.VideosListFrame" />
+        <item itemvalue="Application.VideoInfoDialog" />
+        <item itemvalue="Application.ProgressBar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c9e96fb-d556-450a-94a0-7053a61868db" name="Default" comment="" />
+      <created>1534726259384</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534726259384</updated>
+      <workItem from="1534726260994" duration="30383000" />
+      <workItem from="1534773468318" duration="859000" />
+      <workItem from="1534774823958" duration="9765000" />
+      <workItem from="1534858770623" duration="1050000" />
+      <workItem from="1534860171801" duration="465000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="42522000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16837482" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2674961" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44167963" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3281493" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="videoOders" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://E:/Softwares/Java/jdk1.8.171/src.zip!/javax/swing/JProgressBar.java" />
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/ProgressBar.java" />
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/VideosListFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/VideoInfoDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Demo.jfd" />
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Demo.java" />
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/VideosList.jfd" />
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1919">
+          <caret line="101" column="29" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="249" column="70" selection-start-line="249" selection-start-column="70" selection-end-line="249" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/Video.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/VideoOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/VideosList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+          <folding>
+            <marker date="1534785591177" expanded="true" signature="4369:6549" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1534785591177" expanded="true" signature="7323:7808" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
