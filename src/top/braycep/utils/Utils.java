@@ -5,7 +5,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import top.braycep.bean.Video;
-import top.braycep.bean.VideoOrder;
+import top.braycep.bean.VideoDetails;
 
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -52,8 +52,8 @@ public class Utils {
      * @return 返回封装剧集链接的对象
      * @throws IOException 抛出IO异常，因为可能网页打不开
      */
-    public static VideoOrder findVideoOders(String url) throws IOException {
-        VideoOrder videoOrder = new VideoOrder();
+    public static VideoDetails findVideoOders(String url) throws IOException {
+        VideoDetails videoDetails = new VideoDetails();
         String[] urls;
 
         Document document = Jsoup.connect(url).get();
@@ -64,7 +64,7 @@ public class Utils {
         //获取影视封面
         Element imgTag = document.select("img.lazy").get(0);
         String imgUrl = imgTag.attr("src");
-        videoOrder.setLogo(imgUrl);
+        videoDetails.setLogo(imgUrl);
 
         //获取剧集，m3u8和其他播放源
         Elements eleUrls = document.getElementById("1").getElementsByTag("li");
@@ -72,16 +72,16 @@ public class Utils {
         for (int i = 0; i < eleUrls.size(); i++) {
             urls[i] = eleUrls.get(i).text();
         }
-        videoOrder.setUrls1(urls);
+        videoDetails.setUrls1(urls);
 
         eleUrls = document.getElementById("2").getElementsByTag("li");
         urls = new String[eleUrls.size()];
         for (int i = 0; i < eleUrls.size(); i++) {
             urls[i] = eleUrls.get(i).text();
         }
-        videoOrder.setUrls2(urls);
+        videoDetails.setUrls2(urls);
 
-        return videoOrder;
+        return videoDetails;
     }
 
     public static Object[][] produceTable(Video[] videos) {
@@ -99,7 +99,7 @@ public class Utils {
         return objects;
     }
 
-    public static Object[][] produceTable1(VideoOrder videos) {
+    public static Object[][] produceTable1(VideoDetails videos) {
         int len = 0;
         if (videos != null && videos.getUrls1() != null){
             len = videos.getUrls1().length;
@@ -110,7 +110,7 @@ public class Utils {
         return objects;
     }
 
-    public static Object[][] produceTable2(VideoOrder videos) {
+    public static Object[][] produceTable2(VideoDetails videos) {
         int len = 0;
         if (videos != null && videos.getUrls2() != null){
             len = videos.getUrls2().length;

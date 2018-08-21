@@ -4,9 +4,6 @@
 
 package top.braycep.ui;
 
-import top.braycep.bean.VideoOrder;
-import top.braycep.utils.Utils;
-
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
@@ -18,7 +15,6 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Arrays;
 import javax.swing.*;
 import javax.swing.table.*;
 

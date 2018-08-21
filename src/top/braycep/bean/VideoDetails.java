@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Arrays;
 
-public class VideoOrder {
+public class VideoDetails {
     private String[] urls1;
     private String[] urls2;
     private String videoInfo;
@@ -46,7 +46,7 @@ public class VideoOrder {
 
     @Override
     public String toString() {
-        return "VideoOrder{" +
+        return "VideoDetails{" +
                 "urls1=" + Arrays.toString(urls1) +
                 ", urls2=" + Arrays.toString(urls2) +
                 ", videoInfo='" + videoInfo + '\'' +

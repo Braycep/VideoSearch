@@ -1,7 +1,7 @@
 package top.braycep.ui;
 
 import top.braycep.bean.Video;
-import top.braycep.bean.VideoOrder;
+import top.braycep.bean.VideoDetails;
 import top.braycep.utils.Utils;
 
 import javax.swing.*;
@@ -239,7 +239,7 @@ public class MainFrame extends JFrame {
                             public void run() {
                                 VideosList videosList = new VideosList();
                                 videosList.setVisible(true);
-                                VideoOrder videoOders = null;
+                                VideoDetails videoOders = null;
                                 try {
                                      videoOders = Utils.findVideoOders(url);
                                 } catch (IOException e1) {
