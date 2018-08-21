@@ -16,7 +16,6 @@ import java.awt.event.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Arrays;
 
 public class MainFrame extends JFrame {
     private JPanel contentPane;
@@ -36,6 +35,7 @@ public class MainFrame extends JFrame {
     private boolean searching;
     private Video[] videos;
     private JFrame mainFrame;
+    private boolean clickable = true;
 
 
     {
@@ -145,10 +145,17 @@ public class MainFrame extends JFrame {
             }
         });
 
+        btn_stop.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                searching = false;
+            }
+        });
+
         btn_about.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
-                JOptionPane.showMessageDialog(mainFrame, "Design By Braycep\nBuild By Braycep\nMedia Source From The Internet", "提示", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(mainFrame, "- 源码放在GitHub上: 'VideoSearch'\n- 程序使用IDEA编写\n- 视频来自网络\n- 作者: Braycep\n\n- 软件仅供学习交流使用", "提示", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
@@ -156,14 +163,16 @@ public class MainFrame extends JFrame {
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                focusedRowIndex = table.rowAtPoint(e.getPoint());
-                if (e.getClickCount() == 2) {
-                    openDetails();
-                } else if (e.getButton() == MouseEvent.BUTTON3) {
-                    if (focusedRowIndex != -1) {
-                        table.setRowSelectionInterval(focusedRowIndex, focusedRowIndex);
-                        createMouseMenu();
-                        menu.show(table, e.getX(), e.getY());
+                if (clickable) {
+                    focusedRowIndex = table.rowAtPoint(e.getPoint());
+                    if (e.getClickCount() == 2) {
+                        openDetails();
+                    } else if (e.getButton() == MouseEvent.BUTTON3) {
+                        if (focusedRowIndex != -1) {
+                            table.setRowSelectionInterval(focusedRowIndex, focusedRowIndex);
+                            createMouseMenu();
+                            menu.show(table, e.getX(), e.getY());
+                        }
                     }
                 }
             }
@@ -172,6 +181,7 @@ public class MainFrame extends JFrame {
 
     private void start() {
         searching = true;
+        clickable = true;
         new Thread() {
             public void run() {
                 String keywords = textField.getText().trim();
@@ -281,6 +291,7 @@ public class MainFrame extends JFrame {
     }
 
     private void openDetails() {
+        clickable = false;
         Integer id = (Integer) table.getValueAt(focusedRowIndex, 0);
         String url = Utils.getUrlById(id);
         new Thread() {
@@ -293,6 +304,7 @@ public class MainFrame extends JFrame {
                     videosList = new VideosList(videoDetails);
                     videosList.setVisible(true);
                 } catch (IOException e1) {
+                    clickable = true;
                     JOptionPane.showMessageDialog(mainFrame, "网页打开失败，请检查网络连接", "警告", JOptionPane.WARNING_MESSAGE);
                     e1.printStackTrace();
                 }
@@ -302,6 +314,7 @@ public class MainFrame extends JFrame {
                 if (videoDetails != null && videoDetails.getUrls2() != null) {
                     videosList.setTable2(Utils.produceTable(2, videoDetails));
                 }
+                clickable = true;
             }
         }.start();
     }

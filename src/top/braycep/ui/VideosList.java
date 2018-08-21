@@ -5,6 +5,7 @@
 package top.braycep.ui;
 
 import top.braycep.bean.VideoDetails;
+import top.braycep.utils.M3U8DownloadUtil;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
@@ -14,11 +15,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
+import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
 import java.security.Identity;
+import java.util.logging.Logger;
 import javax.swing.*;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.*;
 
 /**
@@ -30,6 +35,7 @@ public class VideosList extends JFrame {
     private VideoDetails videoDetails;
 
     public VideosList(VideoDetails videoDetails) {
+        mainFrame = this;
         this.videoDetails = videoDetails;
         initComponents();
         initEvents();
@@ -40,14 +46,7 @@ public class VideosList extends JFrame {
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                focusedRowIndex = table1.rowAtPoint(e.getPoint());
-                if (e.getButton() == MouseEvent.BUTTON3) {
-                    if (focusedRowIndex != -1) {
-                        table1.setRowSelectionInterval(focusedRowIndex, focusedRowIndex);
-                        createMouseMenu(table1);
-                        menu.show(table1, e.getX(), e.getY());
-                    }
-                }
+                createMouseMenu(e, table1);
             }
         });
 
@@ -55,37 +54,55 @@ public class VideosList extends JFrame {
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                focusedRowIndex = table2.rowAtPoint(e.getPoint());
-                if (e.getButton() == MouseEvent.BUTTON3) {
-                    if (focusedRowIndex != -1) {
-                        table2.setRowSelectionInterval(focusedRowIndex, focusedRowIndex);
-                        createMouseMenu(table2);
-                        menu.show(table2, e.getX(), e.getY());
-                    }
-                }
+                createMouseMenu(e, table2);
             }
         });
     }
 
-    private void createMouseMenu(JTable table1) {
+    private void createMouseMenu(MouseEvent e, JTable table) {
+        focusedRowIndex = table.rowAtPoint(e.getPoint());
+        if (e.getButton() == MouseEvent.BUTTON3) {
+            if (focusedRowIndex != -1) {
+                table.setRowSelectionInterval(focusedRowIndex, focusedRowIndex);
+                createMouseMenu(table);
+                menu.show(table, e.getX(), e.getY());
+            }
+        }
+    }
+
+    private void createMouseMenu(JTable table) {
         menu = new JPopupMenu();
-        JMenuItem open = new JMenuItem();
+        if (table == table1) {
+            Logger.getGlobal().info("第一页创建右键菜单");
+            JMenuItem play = new JMenuItem();
+            menu.add(initItem(table, play, "在线播放"));
+        } else {
+            Logger.getGlobal().info("第二页创建右键菜单");
+            JMenuItem download = new JMenuItem();
+            JMenuItem downloadVideo = new JMenuItem();
+            menu.add(initItem(table, download, "下载 M3U8 文件"));
+            menu.add(initItem(table, downloadVideo, "下载视频"));
+        }
         JMenuItem copyMenu = new JMenuItem();
-        JMenuItem openInBrowser = new JMenuItem();
-        menu.add(initItem(table1, open, "打开"));
-        menu.add(initItem(table1, copyMenu, "复制链接"));
-        menu.add(initItem(table1, openInBrowser, "在浏览器中打开"));
+        menu.add(initItem(table, copyMenu, "复制链接"));
     }
 
     private JMenuItem initItem(JTable table, JMenuItem item, String text) {
         item.setText(text);
         switch (text) {
-            case "打开":
+            case "在线播放":
                 item.addActionListener(new ActionListener() {
 
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        //download m3u8
+                        String url = (String) table.getValueAt(focusedRowIndex, 2);
+                        if (url != null) {
+                            try {
+                                Desktop.getDesktop().browse(new URI(url));
+                            } catch (IOException | URISyntaxException e1) {
+                                e1.printStackTrace();
+                            }
+                        }
                     }
                 });
                 break;
@@ -104,19 +121,51 @@ public class VideosList extends JFrame {
                     }
                 });
                 break;
-            case "在浏览器中打开":
+            case "下载 M3U8 文件":
                 item.addActionListener(new ActionListener() {
 
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         String url = (String) table.getValueAt(focusedRowIndex, 2);
-                        if (url != null) {
+                        JFileChooser fc = new JFileChooser();
+                        FileNameExtensionFilter filter = new FileNameExtensionFilter("流媒体文件(*.m3u8)", "m3u8");
+                        fc.setFileFilter(filter);
+                        int action = fc.showSaveDialog(mainFrame);
+                        if (action == JFileChooser.APPROVE_OPTION) {
+                            Logger.getGlobal().info("保存m3u8文件");
+                            File file = fc.getSelectedFile();
+                            if (!file.getName().endsWith(".m3u8")) {
+                                file = new File(fc.getCurrentDirectory(), file.getName() + ".m3u8");
+                            }
+                            int result = -1;
+                            if (file.exists()) {
+                                result = JOptionPane.showConfirmDialog(mainFrame, "文件已存在，是否覆盖？", "警告", JOptionPane.OK_CANCEL_OPTION);
+                            }
                             try {
-                                Desktop.getDesktop().browse(new URI(url));
-                            } catch (IOException | URISyntaxException e1) {
+                                if (result == 0) {
+                                    boolean b = file.createNewFile();
+                                    Logger.getGlobal().info("文件船创建" + (b ? "失败" : "成功"));
+                                }
+                                BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8));
+                                bw.write(M3U8DownloadUtil.getM3U8Contents(url));
+                                bw.flush();
+                                bw.close();
+                                JOptionPane.showMessageDialog(mainFrame, "文件以保存", "提示", JOptionPane.INFORMATION_MESSAGE);
+                            } catch (IOException e1) {
                                 e1.printStackTrace();
                             }
+                            Logger.getGlobal().info("文件已保存: " + file.getAbsolutePath());
                         }
+                    }
+                });
+                break;
+            case "下载视频":
+                item.addActionListener(new ActionListener() {
+
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        String url = (String) table.getValueAt(focusedRowIndex, 2);
+
                     }
                 });
                 break;
@@ -203,6 +252,7 @@ public class VideosList extends JFrame {
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    private JFrame mainFrame;
     private JTabbedPane tabbedPane1;
     private JScrollPane scrollPane1;
     private JTable table1;
