@@ -79,6 +79,7 @@ public class MainFrame extends JFrame {
                 String keywords = textField.getText().trim();
                 if (keywords.equals("")) {
                     JOptionPane.showMessageDialog(mainFrame, "关键词为空，忽略搜索！", "提示", JOptionPane.WARNING_MESSAGE);
+                    searching = false;
                 } else {
                     try {
                         model.setNumRows(0);
