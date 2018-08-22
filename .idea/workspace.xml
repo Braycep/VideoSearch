@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c9e96fb-d556-450a-94a0-7053a61868db" name="Default" comment="更新注释">
+    <list default="true" id="2c9e96fb-d556-450a-94a0-7053a61868db" name="Default" comment="测试README.md图片">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (1).JPG" beforeDir="false" afterPath="$PROJECT_DIR$/image/loading(1).JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (10).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (11).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (12).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (13).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (14).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (15).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (16).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (17).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (18).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (19).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (2).JPG" beforeDir="false" afterPath="$PROJECT_DIR$/image/loading(2).JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (20).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (21).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (22).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (23).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (24).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (25).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (26).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (27).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (28).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (29).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (3).JPG" beforeDir="false" afterPath="$PROJECT_DIR$/image/loading(3).JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (30).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (4).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (5).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (6).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (7).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (8).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/loading (9).JPG" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +87,8 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -77,15 +108,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="1814" />
-          <entry key="md" value="25" />
-          <entry key="txt" value="33" />
+          <entry key="md" value="40" />
+          <entry key="txt" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1814" />
-          <entry key="Markdown" value="25" />
-          <entry key="PLAIN_TEXT" value="33" />
+          <entry key="Markdown" value="40" />
+          <entry key="PLAIN_TEXT" value="49" />
         </counts>
       </usages-collector>
     </session>
@@ -96,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="27" column="79" lean-forward="true" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+              <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
               <folding>
                 <element signature="docComment;class#Utils#0" />
                 <element signature="docComment;method#searchByKeyWords#0;class#Utils#0" />
@@ -124,8 +155,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="51">
-                <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <first_editor relative-caret-position="17">
+                <caret line="1" column="113" selection-start-line="1" selection-start-column="113" selection-end-line="1" selection-end-column="113" />
               </first_editor>
               <second_editor />
             </state>
@@ -166,14 +197,6 @@
                 <element signature="method#createMouseMenu#1;class#VideosList#0" />
                 <element signature="docComment;method#initItem#0;class#VideosList#0" />
                 <element signature="method#initItem#0;class#VideosList#0" />
-                <element signature="class#2871:3447" />
-                <element signature="method#actionPerformed#0;class#2871:3447" />
-                <element signature="class#3541:4190" />
-                <element signature="method#actionPerformed#0;class#3541:4190" />
-                <element signature="class#4290:6444" />
-                <element signature="method#actionPerformed#0;class#4290:6444" />
-                <element signature="class#6538:6777" />
-                <element signature="method#actionPerformed#0;class#7017:7258" />
                 <element signature="docComment;method#initComponents#0;class#VideosList#0" />
                 <element signature="method#initComponents#0;class#VideosList#0" />
               </folding>
@@ -222,7 +245,6 @@
               <folding>
                 <element signature="docComment;class#MainFrame#0" />
                 <element signature="initializer##0;class#MainFrame#0" />
-                <element signature="class#1236:1485" />
                 <element signature="docComment;method#MainFrame#0;class#MainFrame#0" />
                 <element signature="method#MainFrame#0;class#MainFrame#0" />
                 <element signature="docComment;method#start#0;class#MainFrame#0" />
@@ -237,15 +259,8 @@
                 <element signature="method#createMouseMenu#0;class#MainFrame#0" />
                 <element signature="docComment;method#initItem#0;class#MainFrame#0" />
                 <element signature="method#initItem#0;class#MainFrame#0" />
-                <element signature="class#8535:8728" />
-                <element signature="class#8822:9536" />
-                <element signature="method#actionPerformed#0;class#8822:9536" />
-                <element signature="class#9633:10269" />
-                <element signature="method#actionPerformed#0;class#9633:10269" />
                 <element signature="docComment;method#main#0;class#MainFrame#0" />
                 <element signature="method#main#0;class#MainFrame#0" />
-                <element signature="class#1899:2187" />
-                <element signature="method#run#0;class#1899:2187" />
               </folding>
             </state>
           </provider>
@@ -361,8 +376,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -385,12 +398,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534918709002" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534924842354" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -541,6 +556,7 @@
       <workItem from="1534860171801" duration="465000" />
       <workItem from="1534860938218" duration="9408000" />
       <workItem from="1534899499591" duration="14084000" />
+      <workItem from="1534918741943" duration="1176000" />
     </task>
     <task id="LOCAL-00001" summary="rename class VideoOrder to VideoDetails">
       <created>1534861192119</created>
@@ -570,16 +586,24 @@
       <option name="project" value="LOCAL" />
       <updated>1534915017776</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="测试README.md图片">
+      <created>1534918862045</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534918862045</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66014000" />
+    <option name="totallyTimeSpent" value="67190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1716418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -622,7 +646,8 @@
     <MESSAGE value="override the table1 &amp; tale2 data produce methods" />
     <MESSAGE value="update for loading UI" />
     <MESSAGE value="更新注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新注释" />
+    <MESSAGE value="测试README.md图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试README.md图片" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -652,92 +677,40 @@
     <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Demo.jfd" />
     <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Demo.java" />
     <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/VideosList.jfd" />
-    <entry file="file://$PROJECT_DIR$/image/loading.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/VideoDetails.java">
+    <entry file="file://$PROJECT_DIR$/image/loading.gif" />
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="153">
+          <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
           <folding>
-            <element signature="docComment;class#VideoDetails#0" />
-            <element signature="method#setLogo#0;class#VideoDetails#0" />
-            <element signature="method#toString#0;class#VideoDetails#0" />
+            <element signature="docComment;class#Utils#0" />
+            <element signature="docComment;method#searchByKeyWords#0;class#Utils#0" />
+            <element signature="method#searchByKeyWords#0;class#Utils#0" />
+            <element signature="docComment;method#findVideoOders#0;class#Utils#0" />
+            <element signature="method#findVideoOders#0;class#Utils#0" />
+            <element signature="docComment;method#produceTable#0;class#Utils#0" />
+            <element signature="method#produceTable#0;class#Utils#0" />
+            <element signature="docComment;method#produceTable#1;class#Utils#0" />
+            <element signature="method#produceTable#1;class#Utils#0" />
+            <element signature="docComment;method#traverseUrls#0;class#Utils#0" />
+            <element signature="method#traverseUrls#0;class#Utils#0" />
+            <element signature="docComment;method#getUrlById#0;class#Utils#0" />
+            <element signature="method#getUrlById#0;class#Utils#0" />
+            <element signature="docComment;method#parseM3u8#0;class#Utils#0" />
+            <element signature="method#parseM3u8#0;class#Utils#0" />
+            <element signature="docComment;method#getNameById#0;class#Utils#0" />
+            <element signature="method#getNameById#0;class#Utils#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/Video.java">
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="51">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding>
-            <element signature="docComment;class#Video#0" />
-            <element signature="method#toString#0;class#Video#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="docComment;class#MainFrame#0" />
-            <element signature="initializer##0;class#MainFrame#0" />
-            <element signature="class#1236:1485" />
-            <element signature="docComment;method#MainFrame#0;class#MainFrame#0" />
-            <element signature="method#MainFrame#0;class#MainFrame#0" />
-            <element signature="docComment;method#start#0;class#MainFrame#0" />
-            <element signature="method#start#0;class#MainFrame#0" />
-            <element signature="docComment;method#openDetails#0;class#MainFrame#0" />
-            <element signature="method#openDetails#0;class#MainFrame#0" />
-            <element signature="docComment;method#initComponents#0;class#MainFrame#0" />
-            <element signature="method#initComponents#0;class#MainFrame#0" />
-            <element signature="docComment;method#initEvents#0;class#MainFrame#0" />
-            <element signature="method#initEvents#0;class#MainFrame#0" />
-            <element signature="docComment;method#createMouseMenu#0;class#MainFrame#0" />
-            <element signature="method#createMouseMenu#0;class#MainFrame#0" />
-            <element signature="docComment;method#initItem#0;class#MainFrame#0" />
-            <element signature="method#initItem#0;class#MainFrame#0" />
-            <element signature="class#8535:8728" />
-            <element signature="class#8822:9536" />
-            <element signature="method#actionPerformed#0;class#8822:9536" />
-            <element signature="class#9633:10269" />
-            <element signature="method#actionPerformed#0;class#9633:10269" />
-            <element signature="docComment;method#main#0;class#MainFrame#0" />
-            <element signature="method#main#0;class#MainFrame#0" />
-            <element signature="class#1899:2187" />
-            <element signature="method#run#0;class#1899:2187" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/M3U8DownloadUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="54" />
-          <folding>
-            <element signature="docComment;class#M3U8DownloadUtil#0" />
-            <element signature="docComment;method#getM3U8Contents#0;class#M3U8DownloadUtil#0" />
-            <element signature="method#getM3U8Contents#0;class#M3U8DownloadUtil#0" />
-            <element signature="docComment;method#parseM3U8ToList#0;class#M3U8DownloadUtil#0" />
-            <element signature="method#parseM3U8ToList#0;class#M3U8DownloadUtil#0" />
-            <element signature="docComment;method#downloadPieceInM3U8#0;class#M3U8DownloadUtil#0" />
-            <element signature="method#downloadPieceInM3U8#0;class#M3U8DownloadUtil#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Loading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-          <folding>
-            <element signature="docComment;class#Loading#0" />
-            <element signature="method#Loading#0;class#Loading#0" />
-            <element signature="method#playLoadingImage#0;class#Loading#0" />
-            <element signature="method#main#0;class#Loading#0" />
+            <element signature="docComment;class#Test#0" />
+            <element signature="method#main#0;class#Test#0" />
           </folding>
         </state>
       </provider>
@@ -762,53 +735,87 @@
             <element signature="method#createMouseMenu#1;class#VideosList#0" />
             <element signature="docComment;method#initItem#0;class#VideosList#0" />
             <element signature="method#initItem#0;class#VideosList#0" />
-            <element signature="class#2871:3447" />
-            <element signature="method#actionPerformed#0;class#2871:3447" />
-            <element signature="class#3541:4190" />
-            <element signature="method#actionPerformed#0;class#3541:4190" />
-            <element signature="class#4290:6444" />
-            <element signature="method#actionPerformed#0;class#4290:6444" />
-            <element signature="class#6538:6777" />
-            <element signature="method#actionPerformed#0;class#7017:7258" />
             <element signature="docComment;method#initComponents#0;class#VideosList#0" />
             <element signature="method#initComponents#0;class#VideosList#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Loading.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="323">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
           <folding>
-            <element signature="docComment;class#Test#0" />
-            <element signature="method#main#0;class#Test#0" />
+            <element signature="docComment;class#Loading#0" />
+            <element signature="method#Loading#0;class#Loading#0" />
+            <element signature="method#playLoadingImage#0;class#Loading#0" />
+            <element signature="method#main#0;class#Loading#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/M3U8DownloadUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="79" lean-forward="true" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+        <state relative-caret-position="136">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="54" />
           <folding>
-            <element signature="docComment;class#Utils#0" />
-            <element signature="docComment;method#searchByKeyWords#0;class#Utils#0" />
-            <element signature="method#searchByKeyWords#0;class#Utils#0" />
-            <element signature="docComment;method#findVideoOders#0;class#Utils#0" />
-            <element signature="method#findVideoOders#0;class#Utils#0" />
-            <element signature="docComment;method#produceTable#0;class#Utils#0" />
-            <element signature="method#produceTable#0;class#Utils#0" />
-            <element signature="docComment;method#produceTable#1;class#Utils#0" />
-            <element signature="method#produceTable#1;class#Utils#0" />
-            <element signature="docComment;method#traverseUrls#0;class#Utils#0" />
-            <element signature="method#traverseUrls#0;class#Utils#0" />
-            <element signature="docComment;method#getUrlById#0;class#Utils#0" />
-            <element signature="method#getUrlById#0;class#Utils#0" />
-            <element signature="docComment;method#parseM3u8#0;class#Utils#0" />
-            <element signature="method#parseM3u8#0;class#Utils#0" />
-            <element signature="docComment;method#getNameById#0;class#Utils#0" />
-            <element signature="method#getNameById#0;class#Utils#0" />
+            <element signature="docComment;class#M3U8DownloadUtil#0" />
+            <element signature="docComment;method#getM3U8Contents#0;class#M3U8DownloadUtil#0" />
+            <element signature="method#getM3U8Contents#0;class#M3U8DownloadUtil#0" />
+            <element signature="docComment;method#parseM3U8ToList#0;class#M3U8DownloadUtil#0" />
+            <element signature="method#parseM3U8ToList#0;class#M3U8DownloadUtil#0" />
+            <element signature="docComment;method#downloadPieceInM3U8#0;class#M3U8DownloadUtil#0" />
+            <element signature="method#downloadPieceInM3U8#0;class#M3U8DownloadUtil#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="docComment;class#MainFrame#0" />
+            <element signature="initializer##0;class#MainFrame#0" />
+            <element signature="docComment;method#MainFrame#0;class#MainFrame#0" />
+            <element signature="method#MainFrame#0;class#MainFrame#0" />
+            <element signature="docComment;method#start#0;class#MainFrame#0" />
+            <element signature="method#start#0;class#MainFrame#0" />
+            <element signature="docComment;method#openDetails#0;class#MainFrame#0" />
+            <element signature="method#openDetails#0;class#MainFrame#0" />
+            <element signature="docComment;method#initComponents#0;class#MainFrame#0" />
+            <element signature="method#initComponents#0;class#MainFrame#0" />
+            <element signature="docComment;method#initEvents#0;class#MainFrame#0" />
+            <element signature="method#initEvents#0;class#MainFrame#0" />
+            <element signature="docComment;method#createMouseMenu#0;class#MainFrame#0" />
+            <element signature="method#createMouseMenu#0;class#MainFrame#0" />
+            <element signature="docComment;method#initItem#0;class#MainFrame#0" />
+            <element signature="method#initItem#0;class#MainFrame#0" />
+            <element signature="docComment;method#main#0;class#MainFrame#0" />
+            <element signature="method#main#0;class#MainFrame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/Video.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="docComment;class#Video#0" />
+            <element signature="method#toString#0;class#Video#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/VideoDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="docComment;class#VideoDetails#0" />
+            <element signature="method#setLogo#0;class#VideoDetails#0" />
+            <element signature="method#toString#0;class#VideoDetails#0" />
           </folding>
         </state>
       </provider>
@@ -816,8 +823,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="51">
-            <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="113" selection-start-line="1" selection-start-column="113" selection-end-line="1" selection-end-column="113" />
           </first_editor>
           <second_editor />
         </state>

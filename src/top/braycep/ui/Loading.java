@@ -27,7 +27,7 @@ public class Loading extends JFrame {
     private void playLoadingImage(Graphics g) {
         File file;
         while (load) {
-            file = new File(System.getProperty("user.dir") + "/image/loading (" + index + ").JPG");
+            file = new File(System.getProperty("user.dir") + "/image/loading(" + index + ").JPG");
             index++;
             try {
                 g.drawImage(ImageIO.read(file), 0, 0, 200, 15, null);
