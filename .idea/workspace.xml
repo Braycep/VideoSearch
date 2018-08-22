@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c9e96fb-d556-450a-94a0-7053a61868db" name="Default" comment="测试README.md图片">
+    <list default="true" id="2c9e96fb-d556-450a-94a0-7053a61868db" name="Default" comment="重命名图片">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (1).JPG" beforeDir="false" afterPath="$PROJECT_DIR$/image/loading(1).JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (10).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (11).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (12).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (13).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (14).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (15).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (16).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (17).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (18).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (19).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (2).JPG" beforeDir="false" afterPath="$PROJECT_DIR$/image/loading(2).JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (20).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (21).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (22).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (23).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (24).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (25).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (26).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (27).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (28).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (29).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (3).JPG" beforeDir="false" afterPath="$PROJECT_DIR$/image/loading(3).JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (30).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (4).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (5).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (6).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (7).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (8).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/loading (9).JPG" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,6 +63,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="JPG" value="1" />
           <entry key="gif" value="1" />
           <entry key="java" value="1" />
           <entry key="md" value="2" />
@@ -100,7 +71,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="1" />
+          <entry key="Image" value="2" />
           <entry key="JAVA" value="1" />
           <entry key="Markdown" value="2" />
         </counts>
@@ -108,15 +79,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="1814" />
-          <entry key="md" value="40" />
-          <entry key="txt" value="49" />
+          <entry key="md" value="46" />
+          <entry key="txt" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1814" />
-          <entry key="Markdown" value="40" />
-          <entry key="PLAIN_TEXT" value="49" />
+          <entry key="Markdown" value="46" />
+          <entry key="PLAIN_TEXT" value="54" />
         </counts>
       </usages-collector>
     </session>
@@ -155,8 +126,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="17">
-                <caret line="1" column="113" selection-start-line="1" selection-start-column="113" selection-end-line="1" selection-end-column="113" />
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
               </first_editor>
               <second_editor />
             </state>
@@ -207,12 +178,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Loading.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+            <state relative-caret-position="187">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="docComment;class#Loading#0" />
                 <element signature="method#Loading#0;class#Loading#0" />
-                <element signature="method#playLoadingImage#0;class#Loading#0" />
                 <element signature="method#main#0;class#Loading#0" />
               </folding>
             </state>
@@ -340,13 +310,13 @@
         <option value="$PROJECT_DIR$/src/top/braycep/ui/Demo.jfd" />
         <option value="$PROJECT_DIR$/src/top/braycep/ui/VideosList.jfd" />
         <option value="$PROJECT_DIR$/src/top/braycep/utils/Test.java" />
-        <option value="$PROJECT_DIR$/src/top/braycep/ui/Loading.java" />
         <option value="$PROJECT_DIR$/src/top/braycep/bean/Video.java" />
         <option value="$PROJECT_DIR$/src/top/braycep/bean/VideoDetails.java" />
         <option value="$PROJECT_DIR$/src/top/braycep/utils/M3U8DownloadUtil.java" />
         <option value="$PROJECT_DIR$/src/top/braycep/ui/VideosList.java" />
         <option value="$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/top/braycep/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/Loading.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -405,7 +375,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534924842354" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534925181218" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -556,7 +526,7 @@
       <workItem from="1534860171801" duration="465000" />
       <workItem from="1534860938218" duration="9408000" />
       <workItem from="1534899499591" duration="14084000" />
-      <workItem from="1534918741943" duration="1176000" />
+      <workItem from="1534918741943" duration="1345000" />
     </task>
     <task id="LOCAL-00001" summary="rename class VideoOrder to VideoDetails">
       <created>1534861192119</created>
@@ -593,11 +563,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534918862045</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="重命名图片">
+      <created>1534924879485</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534924879485</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67190000" />
+    <option name="totallyTimeSpent" value="67359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -647,7 +624,8 @@
     <MESSAGE value="update for loading UI" />
     <MESSAGE value="更新注释" />
     <MESSAGE value="测试README.md图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试README.md图片" />
+    <MESSAGE value="重命名图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="重命名图片" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -741,19 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Loading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-          <folding>
-            <element signature="docComment;class#Loading#0" />
-            <element signature="method#Loading#0;class#Loading#0" />
-            <element signature="method#playLoadingImage#0;class#Loading#0" />
-            <element signature="method#main#0;class#Loading#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/M3U8DownloadUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -820,11 +785,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/image/loading(3).JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Loading.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="docComment;class#Loading#0" />
+            <element signature="method#Loading#0;class#Loading#0" />
+            <element signature="method#main#0;class#Loading#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="113" selection-start-line="1" selection-start-column="113" selection-end-line="1" selection-end-column="113" />
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
           </first_editor>
           <second_editor />
         </state>
