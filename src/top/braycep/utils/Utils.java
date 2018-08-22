@@ -169,4 +169,13 @@ public class Utils {
     private static String parseM3u8(String orgM3u8Url) {
         return orgM3u8Url.replace("/index.m3u8", "/1000k/hls/index.m3u8");
     }
+
+    public static String getNameById(Integer id) {
+        for (Video video : videos) {
+            if (video.getId() == id) {
+                return video.getName();
+            }
+        }
+        return null;
+    }
 }

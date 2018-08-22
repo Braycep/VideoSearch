@@ -34,8 +34,9 @@ public class VideosList extends JFrame {
     private JPopupMenu menu;
     private VideoDetails videoDetails;
 
-    public VideosList(VideoDetails videoDetails) {
+    public VideosList(VideoDetails videoDetails, String title) {
         mainFrame = this;
+        this.setTitle(title);
         this.videoDetails = videoDetails;
         initComponents();
         initEvents();

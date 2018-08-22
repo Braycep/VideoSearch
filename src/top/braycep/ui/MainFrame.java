@@ -36,6 +36,7 @@ public class MainFrame extends JFrame {
     private Video[] videos;
     private JFrame mainFrame;
     private boolean clickable = true;
+    private Loading loading = null;
 
 
     {
@@ -182,6 +183,11 @@ public class MainFrame extends JFrame {
     private void start() {
         searching = true;
         clickable = true;
+        if (loading != null) {
+            loading.setLoad(false);
+            loading.dispose();
+            loading = null;
+        }
         new Thread() {
             public void run() {
                 String keywords = textField.getText().trim();
@@ -292,8 +298,12 @@ public class MainFrame extends JFrame {
 
     private void openDetails() {
         clickable = false;
+        if (loading == null) {
+            loading = new Loading();
+        }
         Integer id = (Integer) table.getValueAt(focusedRowIndex, 0);
         String url = Utils.getUrlById(id);
+        String name = Utils.getNameById(id);
         new Thread() {
             @Override
             public void run() {
@@ -301,10 +311,15 @@ public class MainFrame extends JFrame {
                 VideoDetails videoDetails = null;
                 try {
                     videoDetails = Utils.findVideoOders(url);
-                    videosList = new VideosList(videoDetails);
+                    videosList = new VideosList(videoDetails, name);
                     videosList.setVisible(true);
                 } catch (IOException e1) {
                     clickable = true;
+                    if (loading != null) {
+                        loading.setLoad(false);
+                        loading.dispose();
+                        loading = null;
+                    }
                     JOptionPane.showMessageDialog(mainFrame, "网页打开失败，请检查网络连接", "警告", JOptionPane.WARNING_MESSAGE);
                     e1.printStackTrace();
                 }
@@ -315,6 +330,11 @@ public class MainFrame extends JFrame {
                     videosList.setTable2(Utils.produceTable(2, videoDetails));
                 }
                 clickable = true;
+                if (loading != null) {
+                    loading.setLoad(false);
+                    loading.dispose();
+                    loading = null;
+                }
             }
         }.start();
     }
