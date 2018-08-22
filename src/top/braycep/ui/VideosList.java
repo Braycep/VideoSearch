@@ -257,10 +257,14 @@ class VideosList extends JFrame {
             {
 
                 //---- table1 ----
-                table1.setModel(model1 = new DefaultTableModel(
-                        new Object[][]{},
-                        titles
-                ));
+                model1 = new DefaultTableModel(new Object[][]{}, titles) {
+                    boolean[] columnEditables = new boolean[]{false, false, false};
+
+                    public boolean isCellEditable(int row, int column) {
+                        return columnEditables[column];
+                    }
+                };
+                table1.setModel(model1);
                 table1.setToolTipText(videoDetails.getVideoInfo());
                 {
                     TableColumnModel cm = table1.getColumnModel();
@@ -278,6 +282,13 @@ class VideosList extends JFrame {
             {
 
                 //---- table2 ----
+                model2 = new DefaultTableModel(new Object[][]{}, titles) {
+                    boolean[] columnEditables = new boolean[]{false, false, false};
+
+                    public boolean isCellEditable(int row, int column) {
+                        return columnEditables[column];
+                    }
+                };
                 table2.setModel(model2 = new DefaultTableModel(
                         new Object[][]{},
                         titles
