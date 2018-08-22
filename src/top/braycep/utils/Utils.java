@@ -10,26 +10,28 @@ import top.braycep.bean.VideoDetails;
 import java.io.IOException;
 import java.net.URLEncoder;
 
+/**
+ * 工具类
+ *
+ * @author Braycep
+ */
 public class Utils {
     private static Video[] videos;
-    //interface 1 http://api.iokzy.com
-    //http://api.iokzy.com/index.php?m=vod-search&wd=keywords
 
     /**
      * 根据关键词查找匹配的影视节目列表
      *
      * @param keywords 待搜索的关键词
-     * @return 返回影视对象数组
-     * @throws IOException 抛出IO异常，因为可能打不开该网页
+     * @return 返回搜索结果数组
+     * @throws IOException 抛出IO异常，可能由于网络原因导致连接失败
      */
     public static Video[] searchByKeyWords(String keywords) throws IOException {
         int index = 1;
-        String encodeString = URLEncoder.encode(keywords);
+        String encodeString = URLEncoder.encode(keywords, "UTF8");
         Document document = Jsoup.connect("http://api.iokzy.com//index.php?m=vod-search&wd=" + encodeString).get();
         Elements lis = document.getElementsByClass("xing_vb").get(0).getElementsByTag("li");
-        int len = lis.size();
 
-        //获取视频信息
+        //获取结果信息
         videos = new Video[lis.size() - 2];
         for (int i = 0; i < videos.length; i++) {
             videos[i] = new Video();
@@ -97,6 +99,12 @@ public class Utils {
         return videoDetails;
     }
 
+    /**
+     * 将搜索结果转为表格数据形式
+     *
+     * @param videos 搜索结果数组
+     * @return 表格数据
+     */
     public static Object[][] produceTable(Video[] videos) {
         Object[][] objects = new Object[videos.length][4];
         for (int i = 0; i < videos.length; i++) {
@@ -120,7 +128,7 @@ public class Utils {
      * @return 返回表格数据
      */
     public static Object[][] produceTable(int index, VideoDetails videoDetails) {
-        int len = 0;
+        int len;
         String[] urls;
         if (index == 1) {
             len = videoDetails.getUrls1().length;
@@ -133,6 +141,14 @@ public class Utils {
 
     }
 
+    /**
+     * 拆解URL，并转为表格数据
+     *
+     * @param index 用于区分m3u8和在线播放 index = 2表示 m3u8
+     * @param len   链接数量
+     * @param urls  链接数组
+     * @return 返回表格数据
+     */
     private static Object[][] traverseUrls(int index, int len, String[] urls) {
         Object[][] objects = new Object[len][3];
         for (int i = 0; i < len; i++) {
@@ -151,6 +167,12 @@ public class Utils {
         return objects;
     }
 
+    /**
+     * 通过鼠标点击的行的id获取该行的链接地址
+     *
+     * @param id 鼠标点击的行的id
+     * @return 链接地址
+     */
     public static String getUrlById(int id) {
         for (Video video : videos) {
             if (video.getId() == id) {
@@ -163,13 +185,19 @@ public class Utils {
     /**
      * 转换m3u8地址
      *
-     * @param orgM3u8Url
-     * @return
+     * @param orgM3u8Url 初始m3u8地址
+     * @return 返回转换的m3u8链接
      */
     private static String parseM3u8(String orgM3u8Url) {
         return orgM3u8Url.replace("/index.m3u8", "/1000k/hls/index.m3u8");
     }
 
+    /**
+     * 通过鼠标点击的行的id获取该行的影片名
+     *
+     * @param id 鼠标点击的行的id
+     * @return 影片名
+     */
     public static String getNameById(Integer id) {
         for (Video video : videos) {
             if (video.getId() == id) {

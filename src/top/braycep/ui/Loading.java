@@ -5,12 +5,17 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 
+/**
+ * 用于过渡显示的加载界面
+ *
+ * @author Braycep
+ */
 public class Loading extends JFrame {
 
     private int index = 1;
     private boolean load = true;
 
-    public Loading() {
+    Loading() {
         setSize(200, 15);
         setLocationRelativeTo(null);
         setUndecorated(true);
@@ -42,12 +47,8 @@ public class Loading extends JFrame {
         playLoadingImage(g);
     }
 
-    public boolean isLoad() {
-        return load;
-    }
-
-    public void setLoad(boolean load) {
-        this.load = load;
+    void setLoadFalse() {
+        this.load = false;
     }
 
     public static void main(String[] args) {

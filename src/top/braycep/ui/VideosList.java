@@ -7,6 +7,10 @@ package top.braycep.ui;
 import top.braycep.bean.VideoDetails;
 import top.braycep.utils.M3U8DownloadUtil;
 
+import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumnModel;
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
@@ -19,22 +23,29 @@ import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.security.Identity;
 import java.util.logging.Logger;
-import javax.swing.*;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.table.*;
 
 /**
  * @author Braycep
  */
-public class VideosList extends JFrame {
+class VideosList extends JFrame {
+    private JFrame mainFrame;
+    private JTable table1;
+    private JTable table2;
+    private DefaultTableModel model1;
+    private DefaultTableModel model2;
+    private String[] titles = new String[]{"\u5e8f\u53f7", "\u5267\u96c6", "\u94fe\u63a5"};
     private int focusedRowIndex;
     private JPopupMenu menu;
     private VideoDetails videoDetails;
 
-    public VideosList(VideoDetails videoDetails, String title) {
+    /**
+     * 初始化剧集窗口标题和数据
+     *
+     * @param videoDetails 剧集数据
+     * @param title        标题
+     */
+    VideosList(VideoDetails videoDetails, String title) {
         mainFrame = this;
         this.setTitle(title);
         this.videoDetails = videoDetails;
@@ -42,6 +53,33 @@ public class VideosList extends JFrame {
         initEvents();
     }
 
+    /**
+     * 设置表格页面1 的数据
+     *
+     * @param data 数据
+     */
+    void setTable1(Object[][] data) {
+        model1.setNumRows(0);
+        model1.setDataVector(data, titles);
+        table1.setModel(model1);
+        table1.updateUI();
+    }
+
+    /**
+     * 设置表格页面2 的数据
+     *
+     * @param data 数据
+     */
+    void setTable2(Object[][] data) {
+        model2.setNumRows(0);
+        model2.setDataVector(data, titles);
+        table2.setModel(model2);
+        table2.updateUI();
+    }
+
+    /**
+     * 初始化事件
+     */
     private void initEvents() {
         table1.addMouseListener(new MouseAdapter() {
 
@@ -60,6 +98,12 @@ public class VideosList extends JFrame {
         });
     }
 
+    /**
+     * 创建鼠标右键菜单
+     *
+     * @param e     鼠标事件对象
+     * @param table 表格页面
+     */
     private void createMouseMenu(MouseEvent e, JTable table) {
         focusedRowIndex = table.rowAtPoint(e.getPoint());
         if (e.getButton() == MouseEvent.BUTTON3) {
@@ -71,6 +115,11 @@ public class VideosList extends JFrame {
         }
     }
 
+    /**
+     * 创建鼠标右键菜单，重载方法，用于区分不同的表格页面
+     *
+     * @param table 表格页面
+     */
     private void createMouseMenu(JTable table) {
         menu = new JPopupMenu();
         if (table == table1) {
@@ -88,6 +137,15 @@ public class VideosList extends JFrame {
         menu.add(initItem(table, copyMenu, "复制链接"));
     }
 
+    /**
+     * 初始化页面鼠标右键菜单
+     *
+     * @param table 当前页面
+     * @param item  菜单项
+     * @param text  菜单项名称
+     * @return 返回菜单
+     * @since jdk1.8
+     */
     private JMenuItem initItem(JTable table, JMenuItem item, String text) {
         item.setText(text);
         switch (text) {
@@ -148,7 +206,7 @@ public class VideosList extends JFrame {
                                     Logger.getGlobal().info("文件船创建" + (b ? "失败" : "成功"));
                                 }
                                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8));
-                                bw.write(M3U8DownloadUtil.getM3U8Contents(url));
+                                bw.write(M3U8DownloadUtil.getM3U8Contents(url).toString());
                                 bw.flush();
                                 bw.close();
                                 JOptionPane.showMessageDialog(mainFrame, "文件以保存", "提示", JOptionPane.INFORMATION_MESSAGE);
@@ -165,7 +223,7 @@ public class VideosList extends JFrame {
 
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        String url = (String) table.getValueAt(focusedRowIndex, 2);
+                        //String url = (String) table.getValueAt(focusedRowIndex, 2);
 
                     }
                 });
@@ -176,12 +234,15 @@ public class VideosList extends JFrame {
         return item;
     }
 
+    /**
+     * 初始化UI界面
+     */
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-        tabbedPane1 = new JTabbedPane();
-        scrollPane1 = new JScrollPane();
+        JTabbedPane tabbedPane1 = new JTabbedPane();
+        JScrollPane scrollPane1 = new JScrollPane();
         table1 = new JTable();
-        scrollPane2 = new JScrollPane();
+        JScrollPane scrollPane2 = new JScrollPane();
         table2 = new JTable();
 
         //======== this ========
@@ -237,30 +298,4 @@ public class VideosList extends JFrame {
         setLocationRelativeTo(null);
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
-
-    void setTable1(Object[][] data) {
-        model1.setNumRows(0);
-        model1.setDataVector(data, titles);
-        table1.setModel(model1);
-        table1.updateUI();
-    }
-
-    void setTable2(Object[][] data) {
-        model2.setNumRows(0);
-        model2.setDataVector(data, titles);
-        table2.setModel(model2);
-        table2.updateUI();
-    }
-
-    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    private JFrame mainFrame;
-    private JTabbedPane tabbedPane1;
-    private JScrollPane scrollPane1;
-    private JTable table1;
-    private JScrollPane scrollPane2;
-    private JTable table2;
-    private DefaultTableModel model1;
-    private DefaultTableModel model2;
-    private String[] titles = new String[]{"\u5e8f\u53f7", "\u5267\u96c6", "\u94fe\u63a5"};
-    // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

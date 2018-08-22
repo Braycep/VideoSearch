@@ -6,10 +6,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * @author Braycep
+ */
 public class M3U8DownloadUtil {
 
     /**
@@ -18,15 +22,16 @@ public class M3U8DownloadUtil {
      * @param m3u8Url m3u8链接
      * @return 返回下载的M3U8文件内容
      */
-    public static String getM3U8Contents(String m3u8Url) throws IOException {
+    public static StringBuilder getM3U8Contents(String m3u8Url) throws IOException {
         URL url = new URL(m3u8Url);
         URLConnection connection = url.openConnection();
         InputStream is = connection.getInputStream();
-        BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+        BufferedReader br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
         String line;
-        String fileContent = "";
+        StringBuilder fileContent = new StringBuilder();
         while ((line = br.readLine()) != null) {
-            fileContent += line + "\r\n";
+            line += "\r\n";
+            fileContent.append(line);
         }
         br.close();
         return fileContent;

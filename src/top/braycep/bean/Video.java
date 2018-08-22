@@ -1,5 +1,10 @@
 package top.braycep.bean;
 
+/**
+ * 影视信息对象
+ *
+ * @author Braycep
+ */
 public class Video {
     private int id;
     private String name;

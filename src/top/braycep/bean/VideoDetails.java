@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Arrays;
 
+/**
+ * 剧集对象
+ */
 public class VideoDetails {
     private String[] urls1;
     private String[] urls2;
