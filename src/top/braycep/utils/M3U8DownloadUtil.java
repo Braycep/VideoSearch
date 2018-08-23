@@ -30,8 +30,7 @@ public class M3U8DownloadUtil {
         String line;
         StringBuilder fileContent = new StringBuilder();
         while ((line = br.readLine()) != null) {
-            line += "\r\n";
-            fileContent.append(line);
+            fileContent.append(line).append("\r\n");
         }
         br.close();
         return fileContent;
