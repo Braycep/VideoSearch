@@ -6,14 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c9e96fb-d556-450a-94a0-7053a61868db" name="Default" comment="更新README.md">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/VideoSearch_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/IntelliJ_IDEA_GridLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/TableLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2c9e96fb-d556-450a-94a0-7053a61868db" name="Default" comment="生成 jar 文件">
+      <change afterPath="$PROJECT_DIR$/src/top/braycep/utils/LogUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VideoSearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VideoSearch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/top/braycep/ui/VideosList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/top/braycep/ui/VideosList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/top/braycep/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/top/braycep/utils/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,14 +34,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
           <entry key="jfd" value="4" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="7" />
           <entry key="JFormDesigner_form" value="4" />
           <entry key="Markdown" value="1" />
         </counts>
@@ -51,13 +49,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="3264" />
+          <entry key="java" value="3619" />
           <entry key="txt" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3264" />
+          <entry key="JAVA" value="3619" />
           <entry key="PLAIN_TEXT" value="108" />
         </counts>
       </usages-collector>
@@ -107,28 +105,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="278">
+              <caret line="169" column="20" lean-forward="true" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
               <folding>
-                <element signature="docComment;class#Utils#0" />
-                <element signature="method#searchByKeyWords#0;class#Utils#0" />
-                <element signature="docComment;method#findVideoOders#0;class#Utils#0" />
-                <element signature="method#findVideoOders#0;class#Utils#0" />
-                <element signature="docComment;method#produceTable#0;class#Utils#0" />
-                <element signature="method#produceTable#0;class#Utils#0" />
-                <element signature="docComment;method#produceTable#1;class#Utils#0" />
-                <element signature="method#produceTable#1;class#Utils#0" />
-                <element signature="docComment;method#traverseUrls#0;class#Utils#0" />
-                <element signature="method#traverseUrls#0;class#Utils#0" />
-                <element signature="docComment;method#getUrlById#0;class#Utils#0" />
-                <element signature="method#getUrlById#0;class#Utils#0" />
-                <element signature="docComment;method#parseM3u8#0;class#Utils#0" />
-                <element signature="method#parseM3u8#0;class#Utils#0" />
-                <element signature="docComment;method#getNameById#0;class#Utils#0" />
-                <element signature="method#getNameById#0;class#Utils#0" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/LogUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding>
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,12 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding>
-                <element signature="docComment;class#Test#0" />
-                <element signature="method#main#0;class#Test#0" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -150,36 +142,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/VideosList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2737">
-              <caret line="282" selection-start-line="282" selection-end-line="282" />
+            <state relative-caret-position="-2045">
+              <caret line="135" column="5" lean-forward="true" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
               <folding>
                 <element signature="docComment;class#VideosList#0" />
                 <element signature="docComment;method#VideosList#0;class#VideosList#0" />
                 <element signature="method#VideosList#0;class#VideosList#0" />
                 <element signature="docComment;method#setTable1#0;class#VideosList#0" />
+                <element signature="method#setTable1#0;class#VideosList#0" />
                 <element signature="docComment;method#setTable2#0;class#VideosList#0" />
+                <element signature="method#setTable2#0;class#VideosList#0" />
                 <element signature="docComment;method#initEvents#0;class#VideosList#0" />
                 <element signature="method#initEvents#0;class#VideosList#0" />
                 <element signature="docComment;method#createMouseMenu#0;class#VideosList#0" />
                 <element signature="method#createMouseMenu#0;class#VideosList#0" />
                 <element signature="docComment;method#createMouseMenu#1;class#VideosList#0" />
-                <element signature="method#createMouseMenu#1;class#VideosList#0" />
                 <element signature="docComment;method#initItem#0;class#VideosList#0" />
+                <element signature="class#4088:4664" />
+                <element signature="method#actionPerformed#0;class#4088:4664" />
+                <element signature="class#4758:5407" />
+                <element signature="method#actionPerformed#0;class#4758:5407" />
+                <element signature="class#7766:8007" />
+                <element signature="method#actionPerformed#0;class#7766:8007" />
                 <element signature="docComment;method#initComponents#0;class#VideosList#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/Loading.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="docComment;class#Loading#0" />
-                <element signature="method#Loading#0;class#Loading#0" />
-                <element signature="method#main#0;class#Loading#0" />
+                <element signature="class#9918:10217" />
               </folding>
             </state>
           </provider>
@@ -188,44 +174,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/M3U8DownloadUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="24" column="54" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="54" />
+            <state relative-caret-position="551">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
               <folding>
-                <element signature="docComment;class#M3U8DownloadUtil#0" />
-                <element signature="docComment;method#getM3U8Contents#0;class#M3U8DownloadUtil#0" />
-                <element signature="method#getM3U8Contents#0;class#M3U8DownloadUtil#0" />
-                <element signature="docComment;method#parseM3U8ToList#0;class#M3U8DownloadUtil#0" />
-                <element signature="method#parseM3U8ToList#0;class#M3U8DownloadUtil#0" />
-                <element signature="docComment;method#downloadPieceInM3U8#0;class#M3U8DownloadUtil#0" />
-                <element signature="method#downloadPieceInM3U8#0;class#M3U8DownloadUtil#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="51" column="13" selection-start-line="47" selection-start-column="12" selection-end-line="51" selection-end-column="13" />
+            <state relative-caret-position="247">
+              <caret line="169" column="41" selection-start-line="169" selection-start-column="41" selection-end-line="169" selection-end-column="41" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;class#MainFrame#0" />
-                <element signature="e#1435#1436#0" expanded="true" />
-                <element signature="e#1497#1498#0" expanded="true" />
+                <element signature="initializer##0;class#MainFrame#0" />
+                <element signature="class#1259:1508" />
                 <element signature="docComment;method#MainFrame#0;class#MainFrame#0" />
                 <element signature="method#MainFrame#0;class#MainFrame#0" />
                 <element signature="docComment;method#start#0;class#MainFrame#0" />
-                <element signature="method#start#0;class#MainFrame#0" />
+                <element signature="e#2987#3784#0" expanded="true" />
+                <element signature="e#3783#3784#0" expanded="true" />
                 <element signature="docComment;method#openDetails#0;class#MainFrame#0" />
-                <element signature="method#openDetails#0;class#MainFrame#0" />
                 <element signature="docComment;method#initComponents#0;class#MainFrame#0" />
+                <element signature="method#initComponents#0;class#MainFrame#0" />
                 <element signature="docComment;method#initEvents#0;class#MainFrame#0" />
+                <element signature="method#initEvents#0;class#MainFrame#0" />
                 <element signature="docComment;method#createMouseMenu#0;class#MainFrame#0" />
                 <element signature="method#createMouseMenu#0;class#MainFrame#0" />
                 <element signature="docComment;method#initItem#0;class#MainFrame#0" />
                 <element signature="method#initItem#0;class#MainFrame#0" />
+                <element signature="class#10080:10273" />
+                <element signature="class#10367:11081" />
+                <element signature="method#actionPerformed#0;class#10367:11081" />
+                <element signature="class#11178:11814" />
+                <element signature="method#actionPerformed#0;class#11178:11814" />
                 <element signature="docComment;method#main#0;class#MainFrame#0" />
                 <element signature="method#main#0;class#MainFrame#0" />
+                <element signature="class#12327:12615" />
+                <element signature="method#run#0;class#12327:12615" />
               </folding>
             </state>
           </provider>
@@ -234,12 +224,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/Video.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="docComment;class#Video#0" />
-                <element signature="method#toString#0;class#Video#0" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -247,12 +233,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/VideoDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="247">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding>
-                <element signature="docComment;class#VideoDetails#0" />
-                <element signature="method#setLogo#0;class#VideoDetails#0" />
-                <element signature="method#toString#0;class#VideoDetails#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -276,6 +261,7 @@
       <find>table.set</find>
       <find>edit</find>
       <find>model</find>
+      <find>Logger</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -311,11 +297,12 @@
         <option value="$PROJECT_DIR$/src/top/braycep/bean/Video.java" />
         <option value="$PROJECT_DIR$/src/top/braycep/bean/VideoDetails.java" />
         <option value="$PROJECT_DIR$/src/top/braycep/utils/M3U8DownloadUtil.java" />
-        <option value="$PROJECT_DIR$/src/top/braycep/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/top/braycep/ui/Loading.java" />
-        <option value="$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/top/braycep/ui/VideosList.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/top/braycep/utils/LogUtil.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/VideosList.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java" />
       </list>
     </option>
   </component>
@@ -342,10 +329,11 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -356,31 +344,26 @@
             <path>
               <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
               <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="VideoSearch_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
               <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="braycep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VideoSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="braycep" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -606,13 +589,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75722000" />
+    <option name="totallyTimeSpent" value="77327000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16837482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -621,7 +604,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32832617" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2639485" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26323986" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44167963" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -630,7 +613,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.26688102" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32618025" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32554516" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -713,61 +696,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;class#Utils#0" />
-            <element signature="method#searchByKeyWords#0;class#Utils#0" />
-            <element signature="docComment;method#findVideoOders#0;class#Utils#0" />
-            <element signature="method#findVideoOders#0;class#Utils#0" />
-            <element signature="docComment;method#produceTable#0;class#Utils#0" />
-            <element signature="method#produceTable#0;class#Utils#0" />
-            <element signature="docComment;method#produceTable#1;class#Utils#0" />
-            <element signature="method#produceTable#1;class#Utils#0" />
-            <element signature="docComment;method#traverseUrls#0;class#Utils#0" />
-            <element signature="method#traverseUrls#0;class#Utils#0" />
-            <element signature="docComment;method#getUrlById#0;class#Utils#0" />
-            <element signature="method#getUrlById#0;class#Utils#0" />
-            <element signature="docComment;method#parseM3u8#0;class#Utils#0" />
-            <element signature="method#parseM3u8#0;class#Utils#0" />
-            <element signature="docComment;method#getNameById#0;class#Utils#0" />
-            <element signature="method#getNameById#0;class#Utils#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="docComment;class#Test#0" />
-            <element signature="method#main#0;class#Test#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/VideosList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="282" selection-start-line="282" selection-end-line="282" />
-          <folding>
-            <element signature="docComment;class#VideosList#0" />
-            <element signature="docComment;method#VideosList#0;class#VideosList#0" />
-            <element signature="method#VideosList#0;class#VideosList#0" />
-            <element signature="docComment;method#setTable1#0;class#VideosList#0" />
-            <element signature="docComment;method#setTable2#0;class#VideosList#0" />
-            <element signature="docComment;method#initEvents#0;class#VideosList#0" />
-            <element signature="method#initEvents#0;class#VideosList#0" />
-            <element signature="docComment;method#createMouseMenu#0;class#VideosList#0" />
-            <element signature="method#createMouseMenu#0;class#VideosList#0" />
-            <element signature="docComment;method#createMouseMenu#1;class#VideosList#0" />
-            <element signature="method#createMouseMenu#1;class#VideosList#0" />
-            <element signature="docComment;method#initItem#0;class#VideosList#0" />
-            <element signature="docComment;method#initComponents#0;class#VideosList#0" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -783,67 +715,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/M3U8DownloadUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/VideoDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="54" />
+        <state relative-caret-position="247">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
-            <element signature="docComment;class#M3U8DownloadUtil#0" />
-            <element signature="docComment;method#getM3U8Contents#0;class#M3U8DownloadUtil#0" />
-            <element signature="method#getM3U8Contents#0;class#M3U8DownloadUtil#0" />
-            <element signature="docComment;method#parseM3U8ToList#0;class#M3U8DownloadUtil#0" />
-            <element signature="method#parseM3U8ToList#0;class#M3U8DownloadUtil#0" />
-            <element signature="docComment;method#downloadPieceInM3U8#0;class#M3U8DownloadUtil#0" />
-            <element signature="method#downloadPieceInM3U8#0;class#M3U8DownloadUtil#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/LogUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="51" column="13" selection-start-line="47" selection-start-column="12" selection-end-line="51" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
-            <element signature="docComment;class#MainFrame#0" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="docComment;method#MainFrame#0;class#MainFrame#0" />
-            <element signature="method#MainFrame#0;class#MainFrame#0" />
-            <element signature="docComment;method#start#0;class#MainFrame#0" />
-            <element signature="method#start#0;class#MainFrame#0" />
-            <element signature="docComment;method#openDetails#0;class#MainFrame#0" />
-            <element signature="method#openDetails#0;class#MainFrame#0" />
-            <element signature="docComment;method#initComponents#0;class#MainFrame#0" />
-            <element signature="docComment;method#initEvents#0;class#MainFrame#0" />
-            <element signature="docComment;method#createMouseMenu#0;class#MainFrame#0" />
-            <element signature="method#createMouseMenu#0;class#MainFrame#0" />
-            <element signature="docComment;method#initItem#0;class#MainFrame#0" />
-            <element signature="method#initItem#0;class#MainFrame#0" />
-            <element signature="docComment;method#main#0;class#MainFrame#0" />
-            <element signature="method#main#0;class#MainFrame#0" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/Video.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="169" column="20" lean-forward="true" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
           <folding>
-            <element signature="docComment;class#Video#0" />
-            <element signature="method#toString#0;class#Video#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/braycep/bean/VideoDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/VideosList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="-2045">
+          <caret line="135" column="5" lean-forward="true" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
           <folding>
-            <element signature="docComment;class#VideoDetails#0" />
-            <element signature="method#setLogo#0;class#VideoDetails#0" />
-            <element signature="method#toString#0;class#VideoDetails#0" />
+            <element signature="docComment;class#VideosList#0" />
+            <element signature="docComment;method#VideosList#0;class#VideosList#0" />
+            <element signature="method#VideosList#0;class#VideosList#0" />
+            <element signature="docComment;method#setTable1#0;class#VideosList#0" />
+            <element signature="method#setTable1#0;class#VideosList#0" />
+            <element signature="docComment;method#setTable2#0;class#VideosList#0" />
+            <element signature="method#setTable2#0;class#VideosList#0" />
+            <element signature="docComment;method#initEvents#0;class#VideosList#0" />
+            <element signature="method#initEvents#0;class#VideosList#0" />
+            <element signature="docComment;method#createMouseMenu#0;class#VideosList#0" />
+            <element signature="method#createMouseMenu#0;class#VideosList#0" />
+            <element signature="docComment;method#createMouseMenu#1;class#VideosList#0" />
+            <element signature="docComment;method#initItem#0;class#VideosList#0" />
+            <element signature="class#4088:4664" />
+            <element signature="method#actionPerformed#0;class#4088:4664" />
+            <element signature="class#4758:5407" />
+            <element signature="method#actionPerformed#0;class#4758:5407" />
+            <element signature="class#7766:8007" />
+            <element signature="method#actionPerformed#0;class#7766:8007" />
+            <element signature="docComment;method#initComponents#0;class#VideosList#0" />
+            <element signature="class#9918:10217" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/utils/M3U8DownloadUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/braycep/ui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="169" column="41" selection-start-line="169" selection-start-column="41" selection-end-line="169" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MainFrame#0" />
+            <element signature="initializer##0;class#MainFrame#0" />
+            <element signature="class#1259:1508" />
+            <element signature="docComment;method#MainFrame#0;class#MainFrame#0" />
+            <element signature="method#MainFrame#0;class#MainFrame#0" />
+            <element signature="docComment;method#start#0;class#MainFrame#0" />
+            <element signature="e#2987#3784#0" expanded="true" />
+            <element signature="e#3783#3784#0" expanded="true" />
+            <element signature="docComment;method#openDetails#0;class#MainFrame#0" />
+            <element signature="docComment;method#initComponents#0;class#MainFrame#0" />
+            <element signature="method#initComponents#0;class#MainFrame#0" />
+            <element signature="docComment;method#initEvents#0;class#MainFrame#0" />
+            <element signature="method#initEvents#0;class#MainFrame#0" />
+            <element signature="docComment;method#createMouseMenu#0;class#MainFrame#0" />
+            <element signature="method#createMouseMenu#0;class#MainFrame#0" />
+            <element signature="docComment;method#initItem#0;class#MainFrame#0" />
+            <element signature="method#initItem#0;class#MainFrame#0" />
+            <element signature="class#10080:10273" />
+            <element signature="class#10367:11081" />
+            <element signature="method#actionPerformed#0;class#10367:11081" />
+            <element signature="class#11178:11814" />
+            <element signature="method#actionPerformed#0;class#11178:11814" />
+            <element signature="docComment;method#main#0;class#MainFrame#0" />
+            <element signature="method#main#0;class#MainFrame#0" />
+            <element signature="class#12327:12615" />
+            <element signature="method#run#0;class#12327:12615" />
           </folding>
         </state>
       </provider>

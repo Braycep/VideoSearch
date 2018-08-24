@@ -3,6 +3,7 @@ package top.braycep.ui;
 import com.sun.java.swing.plaf.windows.WindowsLookAndFeel;
 import top.braycep.bean.Video;
 import top.braycep.bean.VideoDetails;
+import top.braycep.utils.LogUtil;
 import top.braycep.utils.Utils;
 
 import javax.swing.*;
@@ -78,10 +79,13 @@ public class MainFrame extends JFrame {
             public void run() {
                 String keywords = textField.getText().trim();
                 if (keywords.equals("")) {
+                    LogUtil.Log("搜索关键词为空，已取消操作");
                     JOptionPane.showMessageDialog(mainFrame, "关键词为空，忽略搜索！", "提示", JOptionPane.WARNING_MESSAGE);
                     searching = false;
                 } else {
+                    LogUtil.Log("\"搜索关键词:\\t\"+keywords");
                     try {
+                        LogUtil.Log("清空表格数据");
                         model.setNumRows(0);
                         videos = Utils.searchByKeyWords(keywords);
                         Object[][] objects = Utils.produceTable(videos);
@@ -89,8 +93,10 @@ public class MainFrame extends JFrame {
                         model.setDataVector(objects, titles);
                         table.setModel(model);
                         table.updateUI();
+                        LogUtil.Log("表格数据已更新");
                     } catch (IOException e1) {
                         searching = false;
+                        LogUtil.Log("网页打开失败，请检查网络连接");
                         JOptionPane.showMessageDialog(mainFrame, "网页打开失败，请检查网络连接", "警告", JOptionPane.WARNING_MESSAGE);
                         e1.printStackTrace();
                     }
@@ -102,6 +108,7 @@ public class MainFrame extends JFrame {
             @Override
             public void run() {
                 btn_search.setEnabled(false);
+                LogUtil.Log("加载搜索动画");
                 while (searching) {
                     try {
                         btn_search.setText("--");
@@ -133,6 +140,7 @@ public class MainFrame extends JFrame {
         Integer id = (Integer) table.getValueAt(focusedRowIndex, 0);
         String url = Utils.getUrlById(id);
         String name = Utils.getNameById(id);
+        LogUtil.Log("搜索剧集:\t" + name);
         new Thread() {
             @Override
             public void run() {
@@ -142,6 +150,7 @@ public class MainFrame extends JFrame {
                     videoDetails = Utils.findVideoOders(url);
                     videosList = new VideosList(videoDetails, name);
                     videosList.setVisible(true);
+                    LogUtil.Log("搜索结束");
                 } catch (IOException e1) {
                     clickable = true;
                     if (loading != null) {
@@ -149,15 +158,19 @@ public class MainFrame extends JFrame {
                         loading.dispose();
                         loading = null;
                     }
+                    LogUtil.Log("网页打开失败，请检查网络连接");
                     JOptionPane.showMessageDialog(mainFrame, "网页打开失败，请检查网络连接", "警告", JOptionPane.WARNING_MESSAGE);
                     e1.printStackTrace();
                 }
                 if (videoDetails != null && videoDetails.getUrls1() != null) {
+                    LogUtil.Log("设置在线播放剧集表格数据");
                     videosList.setTable1(Utils.produceTable(1, videoDetails));
                 }
                 if (videoDetails != null && videoDetails.getUrls2() != null) {
+                    LogUtil.Log("设置M3U8文件剧集表格数据");
                     videosList.setTable2(Utils.produceTable(2, videoDetails));
                 }
+                LogUtil.Log("设置剧集表格数据完成");
                 clickable = true;
                 if (loading != null) {
                     loading.setLoadFalse();
@@ -292,6 +305,7 @@ public class MainFrame extends JFrame {
 
     /**
      * 初始化菜单项
+     *
      * @param item 菜单项
      * @param text 菜单名称
      * @return 初始化完成的菜单

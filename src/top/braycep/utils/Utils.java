@@ -9,6 +9,7 @@ import top.braycep.bean.VideoDetails;
 
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.util.Arrays;
 
 /**
  * 工具类
@@ -28,8 +29,10 @@ public class Utils {
     public static Video[] searchByKeyWords(String keywords) throws IOException {
         int index = 1;
         String encodeString = URLEncoder.encode(keywords, "UTF8");
+        LogUtil.Log("正在搜索...");
         Document document = Jsoup.connect("http://api.iokzy.com//index.php?m=vod-search&wd=" + encodeString).get();
         Elements lis = document.getElementsByClass("xing_vb").get(0).getElementsByTag("li");
+        LogUtil.Log("搜索已解析，共：" + (lis.size() - 2));
 
         //获取结果信息
         videos = new Video[lis.size() - 2];
@@ -106,6 +109,7 @@ public class Utils {
      * @return 表格数据
      */
     public static Object[][] produceTable(Video[] videos) {
+        LogUtil.Log("生成表格数据");
         Object[][] objects = new Object[videos.length][4];
         for (int i = 0; i < videos.length; i++) {
             objects[i][0] = new Object();
@@ -151,6 +155,8 @@ public class Utils {
      */
     private static Object[][] traverseUrls(int index, int len, String[] urls) {
         Object[][] objects = new Object[len][3];
+        LogUtil.Log("转换链接，共:\t" + len);
+        LogUtil.Log(Arrays.toString(urls));
         for (int i = 0; i < len; i++) {
             objects[i][0] = new Object();
             objects[i][1] = new Object();
@@ -158,11 +164,12 @@ public class Utils {
             objects[i][0] = i;
             objects[i][1] = urls[i].split("\\$")[0];
             String url = urls[i].split("\\$")[1];
-            if (index == 2) {
+            //转换会导致播放器播放失败
+           /* if (index == 2) {
                 objects[i][2] = parseM3u8(url);
             } else {
                 objects[i][2] = url;
-            }
+            }*/
         }
         return objects;
     }

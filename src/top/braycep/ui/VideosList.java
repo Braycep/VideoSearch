@@ -5,6 +5,7 @@
 package top.braycep.ui;
 
 import top.braycep.bean.VideoDetails;
+import top.braycep.utils.LogUtil;
 import top.braycep.utils.M3U8DownloadUtil;
 
 import javax.swing.*;
@@ -23,7 +24,6 @@ import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.util.logging.Logger;
 
 /**
  * @author Braycep
@@ -123,11 +123,9 @@ class VideosList extends JFrame {
     private void createMouseMenu(JTable table) {
         menu = new JPopupMenu();
         if (table == table1) {
-            Logger.getGlobal().info("第一页创建右键菜单");
             JMenuItem play = new JMenuItem();
             menu.add(initItem(table, play, "在线播放"));
         } else {
-            Logger.getGlobal().info("第二页创建右键菜单");
             JMenuItem download = new JMenuItem();
             JMenuItem downloadVideo = new JMenuItem();
             menu.add(initItem(table, download, "下载 M3U8 文件"));
@@ -191,7 +189,6 @@ class VideosList extends JFrame {
                         fc.setFileFilter(filter);
                         int action = fc.showSaveDialog(mainFrame);
                         if (action == JFileChooser.APPROVE_OPTION) {
-                            Logger.getGlobal().info("保存m3u8文件");
                             File file = fc.getSelectedFile();
                             if (!file.getName().endsWith(".m3u8")) {
                                 file = new File(fc.getCurrentDirectory(), file.getName() + ".m3u8");
@@ -203,7 +200,7 @@ class VideosList extends JFrame {
                             try {
                                 if (result == 0) {
                                     boolean b = file.createNewFile();
-                                    Logger.getGlobal().info("文件船创建" + (b ? "失败" : "成功"));
+                                    LogUtil.Log("文件船创建" + (b ? "成功" : "失败"));
                                 }
                                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8));
                                 bw.write(M3U8DownloadUtil.getM3U8Contents(url).toString());
@@ -213,7 +210,7 @@ class VideosList extends JFrame {
                             } catch (IOException e1) {
                                 e1.printStackTrace();
                             }
-                            Logger.getGlobal().info("文件已保存: " + file.getAbsolutePath());
+                            LogUtil.Log("文件已保存到:  + file.getAbsolutePath()");
                         }
                     }
                 });
