@@ -9,7 +9,6 @@ import top.braycep.bean.VideoDetails;
 
 import java.io.IOException;
 import java.net.URLEncoder;
-import java.util.Arrays;
 
 /**
  * 工具类
@@ -61,16 +60,26 @@ public class Utils {
         VideoDetails videoDetails = new VideoDetails();
         String[] urls;
 
+        LogUtil.Log("连接: \t" + url);
         Document document = Jsoup.connect(url).get();
 
         //获取影视信息
-        Element info = document.select("div.vodplayinfo > span").get(0);
-        videoDetails.setVideoInfo(info.text().substring(0, 40) + "...");
+        Element info = null;
+        try {
+            info = document.select("div.vodplayinfo > span").get(0);
+        } catch (Exception e) {
+            LogUtil.Log("未找到影视描述");
+        }
+        if (info != null) {
+            videoDetails.setVideoInfo(info.text().substring(0, 40) + "...");
+        } else {
+            videoDetails.setVideoInfo("未找到影视描述");
+        }
 
         //获取影视封面
-        Element imgTag = document.select("img.lazy").get(0);
+        /*Element imgTag = document.select("img.lazy").get(0);
         String imgUrl = imgTag.attr("src");
-        videoDetails.setLogo(imgUrl);
+        videoDetails.setLogo(imgUrl);*/
 
         //获取剧集，m3u8和其他播放源
         Elements eleUrls = document.getElementById("1").getElementsByTag("li");
@@ -98,7 +107,6 @@ public class Utils {
                 videoDetails.setUrls1(urls);    //非m3u8
             }
         }
-
         return videoDetails;
     }
 
@@ -156,7 +164,6 @@ public class Utils {
     private static Object[][] traverseUrls(int index, int len, String[] urls) {
         Object[][] objects = new Object[len][3];
         LogUtil.Log("转换链接，共:\t" + len);
-        LogUtil.Log(Arrays.toString(urls));
         for (int i = 0; i < len; i++) {
             objects[i][0] = new Object();
             objects[i][1] = new Object();
@@ -170,6 +177,7 @@ public class Utils {
             } else {
                 objects[i][2] = url;
             }*/
+            objects[i][2] = url;
         }
         return objects;
     }
